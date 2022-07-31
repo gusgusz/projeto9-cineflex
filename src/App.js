@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Lista from "./Lista";
+import Initial from "./Initial";
+import TelaB from "./TelaB";
+import TelaC from "./TelaC";
 
 
 
@@ -9,20 +11,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Lista />} />
+        <Route path="/" element={<Initial />} />
+        <Route path="/:id/showtimes" element={<TelaB />} />
+        <Route path="/showtimes/:id/seats" element={<TelaC />} />
+
        
       </Routes>
     </BrowserRouter>
   );
 }
-const Lista = styled.div`
-	width: 100px;
-	height: 100px;
-	background: #FFF;
 
-	img {
-		width: 50px;
-    heigth: 50px;
-	}
-`;
 export default App;
