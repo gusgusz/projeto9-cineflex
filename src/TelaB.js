@@ -46,6 +46,9 @@ export default function TelaB(){
            
         </div>
         </Horario>
+        <Baixo>
+          <div></div>
+        </Baixo>
         </>
     );
 }
